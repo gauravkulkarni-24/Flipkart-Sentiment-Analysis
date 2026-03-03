@@ -41,8 +41,8 @@ st.markdown("""
 # --- LOAD MODELS ---
 @st.cache_resource
 def load_assets():
-    model = joblib.load('models/sentiment_model.pkl')
-    tfidf = joblib.load('models/tfidf_vectorizer.pkl')
+    model = joblib.load('Models/sentiment_model.pkl')
+    tfidf = joblib.load('Models/tfidf_vectorizer.pkl')
     return model, tfidf
 
 try:
